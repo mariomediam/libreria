@@ -5,6 +5,8 @@ Antes de empezar,
 
 ![Alt text](libreria.jpg)
 
+https://github.com/mariomediam/libreria/assets/54757091/1d3dd3db-252e-4dae-bb2f-10fc609e21fe
+
 ### Software utilizado
 
 ```
