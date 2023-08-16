@@ -7,7 +7,7 @@ RUN npm install -g nodemon
 ENV CI=true
 ENV PORT=3000
 
-WORKDIR /code
+WORKDIR /frontend/code
 COPY frontend/package.json /code/package.json
 # COPY package-lock.json /code/package-lock.json
 RUN npm i
@@ -17,8 +17,6 @@ COPY . /code
 CMD ["npm", "run", "dev"]
 
 FROM development AS builder
-
-CMD [ "CD frontend" ]
 
 RUN npm run build
 
