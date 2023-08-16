@@ -41,6 +41,6 @@ CMD [ "npm", "start" ]
 FROM nginx:1.13-alpine
 
 # Verificar que el directorio /code/frontend/build existe
-RUN ls -la /code
+RUN ls -la /
 
 COPY --from=builder /code/frontend/build /usr/share/nginx/html
