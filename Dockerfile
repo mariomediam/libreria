@@ -40,4 +40,4 @@ CMD [ "npm", "start" ]
 
 FROM nginx:1.13-alpine
 
-COPY --from=builder /code/build /usr/share/nginx/html
+COPY --from=builder /code/frontend/build /usr/share/nginx/html
