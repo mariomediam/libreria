@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+} 
+
+.cat-img {
+  view-transition-name: meow-image;
+}
+
+.cat-details {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.cat-desc {
+  flex: 1;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.top-bar-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+}
+
+.detailed-img {
+  width: 50vw;
+  height: auto;
+}
+  

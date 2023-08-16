@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="view-trasition" content="same-origin" />
+    <title>Libreria</title>
+  </head>
+  <body class="bg-white dark:bg-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+
+  
+  <script>
+    document.getElementById("moveBtn")?.addEventListener("click", () => {
+      document.startViewTransition(() => {
+        document
+          .querySelectorAll(".thumbnail, .cat-details")
+          .forEach((target) => target.classList.toggle("hidden"));
+      });
+    });
+  </script>
+</html>
