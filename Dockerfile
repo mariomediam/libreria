@@ -18,6 +18,8 @@ CMD ["npm", "run", "dev"]
 
 FROM development AS builder
 
+CMD [ "CD frontend" ]
+
 RUN npm run build
 
 FROM development as dev-envs
