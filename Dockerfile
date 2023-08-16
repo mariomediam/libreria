@@ -8,7 +8,7 @@ ENV CI=true
 ENV PORT=3000
 
 WORKDIR /frontend/code
-COPY frontend/package.json /code/package.json
+COPY package.json /code/package.json
 # COPY package-lock.json /code/package-lock.json
 RUN npm i
 COPY . /code
